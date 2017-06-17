@@ -1,0 +1,4 @@
+project=vk_status_stat_web_backend
+architecture=container
+test=rspec
+template=slim

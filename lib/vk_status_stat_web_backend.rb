@@ -1,0 +1,2 @@
+module VkStatusStatWebBackend
+end
