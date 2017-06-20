@@ -6,3 +6,7 @@ p
     = link_to "Sign out", "/auth/signout"
   - else
     = link_to "Login with VK", "/auth/vkontakte"
+  - friends.each do |friend|
+    .col-4
+      img src="#{friend["photo"]}"
+      = friend["last_name"] + " " + friend["first_name"]

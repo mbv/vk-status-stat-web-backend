@@ -90,7 +90,7 @@ module Web
         manager.failure_app = Web::Controllers::Session::Failure.new
       end
       middleware.use OmniAuth::Builder do
-        provider :vkontakte, ENV["API_KEY"], ENV["API_SECRET"]
+        provider :vkontakte, ENV["API_KEY"], ENV["API_SECRET"], { scope: "friends, offline"}
       end
 
       # Default format for the requests that don't specify an HTTP_ACCEPT header

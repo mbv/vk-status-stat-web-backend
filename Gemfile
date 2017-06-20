@@ -4,12 +4,16 @@ gem "rake"
 gem "hanami",       "~> 1.0"
 gem "hanami-model", "~> 1.0"
 
-gem "pg"
+gem "pg", "~> 0.20.0"
 
 gem "slim"
 
 gem "omniauth-vkontakte"
+gem "oauth2"
 gem "warden"
+
+
+gem "vk-ruby", "~> 1.0.2"
 
 group :development do
   # Code reloading
