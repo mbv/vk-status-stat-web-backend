@@ -15,6 +15,9 @@ gem "warden"
 
 gem "vk-ruby", "~> 1.0.2"
 
+gem "hanami-bootstrap"
+gem "jquery-hanami"
+
 group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading

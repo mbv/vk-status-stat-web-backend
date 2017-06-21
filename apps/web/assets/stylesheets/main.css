@@ -1,0 +1,16 @@
+.friend {
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.friend:hover {
+    background-color: #e3e3e3;
+}
+.friend img {
+    border-radius: 25px;
+}
+.friend span {
+    margin-left: 5px;
+}
