@@ -3,7 +3,9 @@
 #
 # Example:
 # get '/hello', to: ->(env) { [200, {}, ['Hello from Hanami!']] }
-get '/', to: 'home#index'
+
+get "/", to: "home#index"
+get "/user/:id", to: "user#show"
 
 get "/auth/failure", to: "session#failure"
 get "/auth/signout", to: "session#destroy"
