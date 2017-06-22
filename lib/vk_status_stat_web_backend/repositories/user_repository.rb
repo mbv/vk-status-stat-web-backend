@@ -8,7 +8,7 @@ class UserRepository < Hanami::Repository
         access_token: auth_hash[:credentials][:token]
     }
 
-    if (user = users.where(vk_id: attrs[:vk_id]).one)
+    if (user = users.where(vk_id: vk_id).one)
       #user.first_name = attrs[:first_name]
       update user
     else
