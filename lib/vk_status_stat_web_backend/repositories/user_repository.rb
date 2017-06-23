@@ -10,7 +10,7 @@ class UserRepository < Hanami::Repository
 
     if (user = users.where(vk_id: vk_id).one)
       #user.first_name = attrs[:first_name]
-      update user
+      update user.id, attrs
     else
       create(User.new(attrs.merge(vk_id: vk_id)))
     end
