@@ -19,8 +19,8 @@ module Web
       # When you add new directories, remember to add them here.
       #
       load_paths << [
-        'controllers',
-        'views'
+          'controllers',
+          'views'
       ]
 
       # Handle exceptions with HTTP statuses (true) or don't catch them (false).
@@ -90,7 +90,7 @@ module Web
         manager.failure_app = Web::Controllers::Session::Failure.new
       end
       middleware.use OmniAuth::Builder do
-        provider :vkontakte, ENV["API_KEY"], ENV["API_SECRET"], { scope: "friends, offline"}
+        provider :vkontakte, ENV["API_KEY"], ENV["API_SECRET"], { scope: "friends, offline" }
       end
 
       # Default format for the requests that don't specify an HTTP_ACCEPT header
@@ -162,7 +162,7 @@ module Web
         # Specify sources for assets
         #
         sources << [
-          'assets'
+            'assets'
         ]
       end
 
@@ -244,7 +244,7 @@ module Web
         frame-ancestors 'self';
         base-uri 'self';
         default-src 'none';
-        script-src 'self' 'unsafe-inline';
+        script-src 'self';
         connect-src 'self';
         img-src 'self' https: data:;
         style-src 'self' 'unsafe-inline' https:;

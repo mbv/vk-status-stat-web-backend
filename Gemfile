@@ -22,6 +22,10 @@ group :development do
   # Code reloading
   # See: http://hanamirb.org/guides/projects/code-reloading
   gem "shotgun"
+  gem "capistrano", "~> 3.7"
+  gem "capistrano-hanami"
+  gem "capistrano-passenger", "~> 0.2.0"
+  gem "capistrano-rbenv", "~> 2.1"
 end
 
 group :test, :development do
