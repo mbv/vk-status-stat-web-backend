@@ -5,8 +5,7 @@ module Web::Views::Home
 
     def friends
       if current_user
-        result = UserRepository.new.friends(current_user)
-        result
+        VKRepository.new.friends(current_user)
       else
         []
       end

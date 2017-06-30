@@ -1,5 +1,10 @@
 = user.id
 = user.first_name + " " + user.last_name
+- friends.each do |user_id, records|
+  .friend
+    = user_models[user_id].full_name
+    - records.each do |record|
+      p = record.created_at.to_s+ " " + ((record.status == 1) ? "Добавлен" : "Удален")
 .chart-container[style="position: relative; height:40vh; width:80vw"]
   canvas#myChart
 = javascript "chart"

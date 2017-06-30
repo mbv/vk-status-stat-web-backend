@@ -15,10 +15,4 @@ class UserRepository < Hanami::Repository
       create(User.new(attrs.merge(vk_id: vk_id)))
     end
   end
-
-  def friends(user)
-    app = VK::Application.new(access_token: user.access_token)
-    result = app.friends.get(fields: "first_name, last_name, photo")
-    result["items"]
-  end
 end
