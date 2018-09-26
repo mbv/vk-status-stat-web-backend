@@ -6,6 +6,7 @@
 get "/", to: "home#index"
 get "/user/:id/chart", to: "user#chart"
 get "/user/:id", to: "user#show"
+get "/user/:id/track", to: "user#track"
 
 get "/auth/failure", to: "session#failure"
 get "/auth/signout", to: "session#destroy"
